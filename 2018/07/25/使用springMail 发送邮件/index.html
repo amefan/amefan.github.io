@@ -43,6 +43,8 @@
     
     <title>
         
+            使用springMail发送邮件 | 
+        
         afan的博客
     </title>
 
@@ -52,7 +54,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="afan">
+    <meta name="keywords" content="afan,spring,Mail">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -79,6 +81,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -210,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="afan的博客">
-    <meta name="msapplication-starturl" content="http://yoursite.com/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/07/25/使用springMail 发送邮件/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="afan的博客">
@@ -225,13 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/">
+    <meta property="og:url" content="http://yoursite.com/2018/07/25/使用springMail 发送邮件/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="afan的博客">
+    <meta property="og:title" content="使用springMail发送邮件 | afan的博客">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="spring"> <meta property="og:article:tag" content="Mail"> 
 
+    
+        <meta property="article:published_time" content="Wed Jul 25 2018 18:19:21 GMT+0800">
+        <meta property="article:modified_time" content="Wed Jul 25 2018 19:47:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -239,35 +247,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com" />
+        <link rel="canonical" href="http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
+
+
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "Website",
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html",
+    "headline": "使用springMail发送邮件",
+    "datePublished": "Wed Jul 25 2018 18:19:21 GMT+0800",
+    "dateModified": "Wed Jul 25 2018 19:47:48 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "afan",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/head.jpg"
+        },
+        "description": "少年啦仰望星空"
+    },
     "publisher": {
         "@type": "Organization",
         "name": "afan的博客",
-        "logo": "/img/favicon.png"
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
     },
-    "url": "http://yoursite.com",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/img/favicon.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://yoursite.com"
-    },
-    "description": ""
+    "keywords": ",spring,Mailafan",
+    "description": "",
 }
 </script>
-
-
 
 
     
@@ -301,418 +317,312 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.jpeg)">
-        <p class="index-top-block-slogan"><a href="#">
-        
-            
-                少年啦仰望星空
-            
-        
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/head.jpg" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>afan</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
-    
-
-
-
-
-    <!-- Local -->
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
-        </label>
-
-        <form autocomplete="off" id="search-form" class="mdl-textfield__expandable-holder">
-            <input type="text" id="search" class="form-control mdl-textfield__input search-input" name="q" results="0" placeholder=""/>
-            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
-        </form>
-    </div>
-    <div id="local-search-result"></div>
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="#" target="_blank">
-            <img src="/img/logo2.PNG" alt="logo" />
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
         </a>
     </div>
+    -->
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>afan的博客</strong>
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#springMail-发送邮件"><span class="post-toc-number">1.</span> <span class="post-toc-text">springMail 发送邮件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#javaMail介绍"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">javaMail介绍</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#入门Demo-qq邮箱为例"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">入门Demo(qq邮箱为例)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-打开qq邮箱，在设置中找到账户开启smtp-pop3"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">1.打开qq邮箱，在设置中找到账户开启smtp pop3</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-创建一个Maven工程，jar打包方式，向pom-xml中添加依赖"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.创建一个Maven工程，jar打包方式，向pom.xml中添加依赖</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-编写发送email类"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">3.编写发送email类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-编写spring配置文件"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">4.编写spring配置文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-编写测试类"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">5.编写测试类</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/文章缩略图/springMail.jpeg)">
+    
+            <p class="article-headline-p">
+                使用springMail发送邮件
+            </p>
         </div>
-        <div class="section-spacer"></div>
 
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/head.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>afan</strong>
+        <span>7月 25, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
         </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-                <a class="index_share-link" href="/tags" title="标签">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        标签
-                    </li>
-                </a>
-            
-        </ul>
+    -->
 
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
+    <!-- Qrcode -->
+    
 
-            
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Mail/">Mail</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/spring/">spring</a>
+    </ul>
+    
 
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=afan的博客&url=http://yoursite.com&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到微博
-                    </li>
-                </a>
-            
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=afan的博客&url=http://yoursite.com&via=afan" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Twitter
-                    </li>
-                </a>
-            
+    
 
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Facebook
-                    </li>
-                </a>
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=使用springMail发送邮件&url=http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            
-                <a class="index_share-link" href="https://plus.google.com/share?url=http://yoursite.com" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Google+
-                    </li>
-                </a>
-            
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=使用springMail发送邮件&url=http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html&via=afan" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
 
-            
-                <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=afan的博客&title=afan的博客&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com" target="_blank">
-                    <li class="mdl-menu__item">
-                        分享到 QQ
-                    </li>
-                </a>
-            
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
 
-            
-        </ul>
-    </div>
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=afan的博客&title=使用springMail发送邮件&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/07/25/使用springMail 发送邮件/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-    <div class="locate-thumbnail-symbol"></div>
+        <h1 id="springMail-发送邮件"><a href="#springMail-发送邮件" class="headerlink" title="springMail 发送邮件"></a>springMail 发送邮件</h1><h2 id="javaMail介绍"><a href="#javaMail介绍" class="headerlink" title="javaMail介绍"></a>javaMail介绍</h2><p>JavaMail，顾名思义，提供给开发者处理电子邮件相关的编程接口。它是Sun发布的用来处理email的API。它可以方便地执行一些常用的邮件传输。JavaMail  API是Sun公司为方便Java开发人员在应用程序中实现邮件发送和接收功能而提供的一套标准开发包，它支持一些常用的邮件协议，如：SMTP、POP3、IMAP。开发人员使用JavaMail API编写邮件处理软件时，无须考虑邮件协议底层的实现细节，只要调用JavaMail开发包中相应的API类就可以了</p>
+<hr>
+<h2 id="入门Demo-qq邮箱为例"><a href="#入门Demo-qq邮箱为例" class="headerlink" title="入门Demo(qq邮箱为例)"></a>入门Demo(qq邮箱为例)</h2><h3 id="1-打开qq邮箱，在设置中找到账户开启smtp-pop3"><a href="#1-打开qq邮箱，在设置中找到账户开启smtp-pop3" class="headerlink" title="1.打开qq邮箱，在设置中找到账户开启smtp pop3"></a>1.打开qq邮箱，在设置中找到账户开启smtp pop3</h3><p><img src="/使用springmail发送邮件/1.png" alt="qq邮箱"><br>发送短信后将密码复制下来  </p>
+<h3 id="2-创建一个Maven工程，jar打包方式，向pom-xml中添加依赖"><a href="#2-创建一个Maven工程，jar打包方式，向pom-xml中添加依赖" class="headerlink" title="2.创建一个Maven工程，jar打包方式，向pom.xml中添加依赖"></a>2.创建一个Maven工程，jar打包方式，向pom.xml中添加依赖</h3><pre><code class="xml">   &lt;dependencies&gt;
+      &lt;dependency&gt;
+          &lt;groupId&gt;javax.mail&lt;/groupId&gt;
+          &lt;artifactId&gt;mail&lt;/artifactId&gt;
+          &lt;version&gt;1.4.5&lt;/version&gt;
+      &lt;/dependency&gt;
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
+          &lt;version&gt;4.3.2.RELEASE&lt;/version&gt;
+      &lt;/dependency&gt;
+      &lt;dependency&gt;
+          &lt;groupId&gt;junit&lt;/groupId&gt;
+          &lt;artifactId&gt;junit&lt;/artifactId&gt;
+          &lt;version&gt;4.12&lt;/version&gt;
+      &lt;/dependency&gt;
+</code></pre>
+<h3 id="3-编写发送email类"><a href="#3-编写发送email类" class="headerlink" title="3.编写发送email类"></a>3.编写发送email类</h3><pre><code class="java">public class MailSender {
+       private JavaMailSender jms;
 
-    <!-- Pin on top -->
-    
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/25/使用Quartz实现定时任务调度/">使用Quartz实现定时任务调度</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Quartz框架  Quartz是OpenSymphony开源组织在Job scheduling领域又一个开源项目，它完全由 Java 写成，并设计用于 J2SE 和 J2EE 应用中。Quartz可以用来创建简单或为运行十个，百个，甚至是好几万个Jobs这样复杂的程序。它提供了巨大的灵活性而不牺牲简单性。你能够用它来为执行一个作业而创建简...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/25/使用Quartz实现定时任务调度/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/head.jpg" width="44px" height="44px" alt="afan's avatar">
-            </div>
-            <div>
-                <strong>afan</strong>
-                <span>7月 25, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/JavaEE相关框架/">JavaEE相关框架</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="/文章缩略图/springMail.jpeg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/25/使用springMail 发送邮件/">使用springMail发送邮件</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            springMail 发送邮件javaMail介绍JavaMail，顾名思义，提供给开发者处理电子邮件相关的编程接口。它是...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/25/使用springMail 发送邮件/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/head.jpg" width="44px" height="44px" alt="afan's avatar">
-            </div>
-            <div>
-                <strong>afan</strong>
-                <span>7月 25, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/spring相关/">spring相关</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="/spring-security/sse1.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/06/26/初识spring-security/">初识spring-security之入门demo</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            走进安全框架spring security
-什么是spring security
-Spring Security是一个能够为基于Spring的企业应用系统提供声明式的安全访问控制解决方案的安全框架。它提供了一组可以在Spri...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/06/26/初识spring-security/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/head.jpg" width="44px" height="44px" alt="afan's avatar">
-            </div>
-            <div>
-                <strong>afan</strong>
-                <span>6月 26, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/spring系列/">spring系列</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="/为什么搭建自己的博客/5.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/06/21/为什么搭建自己的博客/">为什么搭建自己的博客</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            缘由
-偶然的原因，在网上无意中看到了使用 hexo + github 来搭建免费的博客，然后决定自己来搭建一个属于自己的个人博客 。 
-另外的原因， 对于自己所学的知识不牢固，经常过了一段时间就忘记了，也想通过写写博客来总结一下，有时候也可以沉淀一下自己。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/06/21/为什么搭建自己的博客/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/head.jpg" width="44px" height="44px" alt="afan's avatar">
-            </div>
-            <div>
-                <strong>afan</strong>
-                <span>6月 21, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/随笔/">随笔</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 6; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
+    public void setJms(JavaMailSender jms) {
+        this.jms = jms;
     }
-</script>
+
+    public void sendMail() throws Exception{
+        //创建邮件
+        MimeMessage message=jms.createMimeMessage();
+        // 包装邮件
+        MimeMessageHelper hepler = new MimeMessageHelper(message);
+        // 设置发件人
+        hepler.setFrom(&quot;392405372@qq.com&quot;);
+        // 收件人
+        hepler.setTo(&quot;1257096364@qq.com&quot;);
+        // 主题
+        hepler.setSubject(&quot;mail Test&quot;);
+        // 内容
+        hepler.setText(&quot;springMail测试邮件&quot;);
+        //发送
+        jms.send(message);
+    }
+
+}
+</code></pre>
+<h3 id="4-编写spring配置文件"><a href="#4-编写spring配置文件" class="headerlink" title="4.编写spring配置文件"></a>4.编写spring配置文件</h3><p>创建applicationContext_mail.xml文件，copy文件头约束后，添加下面代码</p>
+<pre><code class="xml">
+    &lt;bean id=&quot;javaMailSender&quot; class=&quot;org.springframework.mail.javamail.JavaMailSenderImpl&quot;&gt;
+          &lt;!--smtp：邮件发送协议  --&gt;
+          &lt;property name=&quot;protocol&quot; value=&quot;smtp&quot;&gt;&lt;/property&gt;
+          &lt;!--邮件服务器地址  --&gt;
+          &lt;property name=&quot;host&quot; value=&quot;smtp.qq.com&quot;&gt;&lt;/property&gt;
+          &lt;!--端口  --&gt;
+           &lt;property name=&quot;port&quot; value=&quot;465&quot;&gt;&lt;/property&gt;
+           &lt;!--邮箱用户名  --&gt;
+          &lt;property name=&quot;username&quot; value=&quot;你的qq@qq.com&quot;&gt;&lt;/property&gt;
+           &lt;!--密码之前在qq邮箱开启smtp后的密码，不是你的qq密码 --&gt;
+          &lt;property name=&quot;password&quot; value=&quot;&quot;&gt;&lt;/property&gt;
+           &lt;!--其它配置  --&gt;
+          &lt;property name=&quot;javaMailProperties&quot; &gt;
+
+             &lt;props&gt;
+                &lt;!-- 用户验证是否为邮箱 --&gt;
+                &lt;prop key=&quot;mail.smtp.auth&quot;&gt;true&lt;/prop&gt;
+                &lt;!-- 开启ssl验证 不然会报错 --&gt;
+                &lt;prop key=&quot;mail.smtp.ssl.enable&quot;&gt;true&lt;/prop&gt;
+             &lt;/props&gt;
+          &lt;/property&gt;
+        &lt;/bean&gt;
+
+        &lt;bean id=&quot;testSend&quot; class=&quot;springMail.TestSend&quot;&gt;
+          &lt;property name=&quot;jms&quot; ref=&quot;javaMailSender&quot;&gt;&lt;/property&gt;
+        &lt;/bean&gt;
+</code></pre>
+<h3 id="5-编写测试类"><a href="#5-编写测试类" class="headerlink" title="5.编写测试类"></a>5.编写测试类</h3><pre><code class="java">public class TestMail {
+
+    @Test
+    public void test(){
+     ApplicationContext ac = new ClassPathXmlApplicationContext(&quot;classpath:applicationContext_mail.xml&quot;);
+     TestSend ts = (TestSend) ac.getBean(&quot;testSend&quot;);
+     try {
+        ts.sendMail();
+    } catch (Exception e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+    }
+</code></pre>
+
+        
+    
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/07/25/使用Quartz实现定时任务调度/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/26/初识spring-security/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -1028,31 +938,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
-        <script type="text/ls-javascript" id="search-local-js-script">
-    var searchFunc=function(c,a,b){$.ajax({url:c,dataType:"xml",success:function(e){var d=$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get();var g=document.getElementById(a);var f=document.getElementById(b);g.addEventListener("input",function(){var i='<ul class="search-result-list">';var h=this.value.trim().toLowerCase().split(/[\s\-]+/);f.innerHTML="";if(this.value.trim().length<=0){return}d.forEach(function(o){var n=true;var s=[];var t=o.title.trim().toLowerCase();var m=o.content.trim().replace(/<[^>]+>/g,"").toLowerCase();var j=o.url;var u=-1;var q=-1;var p=-1;if(t!==""&&m!==""){h.forEach(function(w,x){u=t.indexOf(w);q=m.indexOf(w);if(u<0&&q<0){n=false}else{if(q<0){q=0}if(x===0){p=q}}})}if(n){i+='<li><a href="'+j+'" class="search-result-title" target="_blank">'+t;var r=o.content.trim().replace(/<[^>]+>/g,"");if(p>=0){var k=p-6;var l=p+6;if(k<0){k=0}if(k===0){l=10}if(l>r.length){l=r.length}var v=r.substr(k,l);h.forEach(function(w){var x=new RegExp(w,"gi");v=v.replace(x,'<em class="search-keyword">'+w+"</em>")});i+='<p class="search-result">'+v+"...</p></a>"}}});f.innerHTML=i})}})};
-</script>
-
-
-        <script type="text/ls-javascript" id="search-input-script">
-            var inputArea = document.querySelector('#search');
-            var getSearchFile = function() {
-                var path = 'search.xml';
-                searchFunc(path, 'search', 'local-search-result');
-            }
-
-            if(inputArea) {
-                inputArea.onfocus = function() {
-                    getSearchFile();
-                }
-            }
-        </script>
-    
-
 
 <!-- UC Browser Compatible -->
 <script>
@@ -1066,6 +951,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -1078,6 +967,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     

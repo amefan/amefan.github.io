@@ -25,8 +25,6 @@
 
 
 
-        <link rel="dns-prefetch" href="https://cdn-city.livere.com"/>
-
 
 
 
@@ -56,7 +54,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="afan">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -311,7 +309,8 @@
     <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
         
             走进安全框架spring security
-
+什么是spring security
+Spring Security是一个能够为基于Spring的企业应用系统提供声明式的安全访问控制解决方案的安全框架。它提供了一组可以在Spri...
         
         &nbsp;&nbsp;&nbsp;
         <span>
@@ -362,7 +361,7 @@
 
     var locatePost = $('.locate-thumbnail-symbol').next();
     for(var i = 0; i < 6; i++) {
-        randomNum = Math.floor(Math.random() *  + 1);
+        randomNum = Math.floor(Math.random() * 19 + 1);
 
         locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
         locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
@@ -439,9 +438,28 @@
             </a>
         </li>
         
+            <li class="divider"></li>
+        
     
 
     <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
     
 
     <!-- Categories  -->
@@ -456,13 +474,25 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/spring系列/">spring系列<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/随笔/">随笔<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/JavaEE相关框架/">JavaEE相关框架<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/spring相关/">spring相关<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/spring系列/">spring系列<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/随笔/">随笔<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
+        
+            <li class="divider"></li>
         
     
 
     <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                标签
+            </a>
+        </li>
+        
     
 
     <!-- Article Number  -->
@@ -491,6 +521,15 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Help & Support -->
 <!--
+
+    <a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
 
 -->
 
@@ -559,6 +598,12 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/afan-63/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
     
 
     <!-- Bilibili -->
@@ -639,8 +684,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-
-   
 
 
 
