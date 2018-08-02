@@ -43,7 +43,7 @@
     
     <title>
         
-            为什么搭建自己的博客 | 
+            Node.js操作数据库 | 
         
         afan的博客
     </title>
@@ -54,7 +54,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="afan">
+    <meta name="keywords" content="afan,node js,数据库">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="afan的博客">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/06/21/为什么搭建自己的博客/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/02/操作数据库/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="afan的博客">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/06/21/为什么搭建自己的博客/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/02/操作数据库/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="为什么搭建自己的博客 | afan的博客">
+    <meta property="og:title" content="Node.js操作数据库 | afan的博客">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="node js"> <meta property="og:article:tag" content="数据库"> 
 
     
-        <meta property="article:published_time" content="Thu Jun 21 2018 11:26:06 GMT+0800">
-        <meta property="article:modified_time" content="Wed Jul 25 2018 20:38:15 GMT+0800">
+        <meta property="article:published_time" content="Thu Aug 02 2018 19:20:14 GMT+0800">
+        <meta property="article:modified_time" content="Thu Aug 02 2018 19:22:11 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/02/操作数据库/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html",
-    "headline": "为什么搭建自己的博客",
-    "datePublished": "Thu Jun 21 2018 11:26:06 GMT+0800",
-    "dateModified": "Wed Jul 25 2018 20:38:15 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/02/操作数据库/index.html",
+    "headline": "Node.js操作数据库",
+    "datePublished": "Thu Aug 02 2018 19:20:14 GMT+0800",
+    "dateModified": "Thu Aug 02 2018 19:22:11 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "afan",
@@ -280,7 +280,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": "afan",
+    "keywords": ",node js,数据库afan",
     "description": "",
 }
 </script>
@@ -346,7 +346,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#缘由"><span class="post-toc-number">1.</span> <span class="post-toc-text">缘由</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#每个人都应该来搭建自己的博客"><span class="post-toc-number">2.</span> <span class="post-toc-text">每个人都应该来搭建自己的博客</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Node-js-操作数据库-mongodb和mydql"><span class="post-toc-number">1.</span> <span class="post-toc-text">Node.js 操作数据库(mongodb和mydql)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-0-Node-js-操作-MongoDB"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.0.Node.js 操作 MongoDB</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#mongoose-操作入门demo"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">mongoose 操作入门demo</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Node-js操作mysql"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Node.js操作mysql</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -378,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                为什么搭建自己的博客
+                Node.js操作数据库
             </p>
         </div>
 
@@ -397,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>afan</strong>
-        <span>6月 21, 2018</span>
+        <span>8月 02, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -415,6 +415,15 @@
 
     <!-- Tags (bookmark) -->
     
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/node-js/">node js</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/数据库/">数据库</a>
+    </ul>
+    
 
     <!-- Share -->
     
@@ -429,7 +438,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=为什么搭建自己的博客&url=http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Node.js操作数据库&url=http://yoursite.com/2018/08/02/操作数据库/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -438,7 +447,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=为什么搭建自己的博客&url=http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html&via=afan" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Node.js操作数据库&url=http://yoursite.com/2018/08/02/操作数据库/index.html&via=afan" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -447,7 +456,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/02/操作数据库/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -456,7 +465,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/08/02/操作数据库/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -468,7 +477,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=afan的博客&title=为什么搭建自己的博客&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/06/21/为什么搭建自己的博客/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=afan的博客&title=Node.js操作数据库&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/02/操作数据库/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -487,25 +496,161 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h3 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h3><ol>
-<li>偶然的原因，在网上无意中看到了使用 <code>hexo + github</code> 来搭建免费的博客，然后决定自己来搭建一个属于自己的个人博客 。 </li>
-<li>另外的原因， 对于自己所学的知识不牢固，经常过了一段时间就忘记了，也想通过写写博客来总结一下，有时候也可以沉淀一下自己。  </li>
-</ol>
-<hr>
-<h3 id="每个人都应该来搭建自己的博客"><a href="#每个人都应该来搭建自己的博客" class="headerlink" title="每个人都应该来搭建自己的博客"></a>每个人都应该来搭建自己的博客</h3><ul>
-<li><p>很多地方都可以写博客，因为自由自在，可以自己打造属于自己的专属博客，更多查看 </p>
-<blockquote>
-<p><a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank" rel="noopener">[BetterExplained]为什么你应该（从现在开始就）写博客</a>  </p>
+        <h1 id="Node-js-操作数据库-mongodb和mydql"><a href="#Node-js-操作数据库-mongodb和mydql" class="headerlink" title="Node.js 操作数据库(mongodb和mydql)"></a>Node.js 操作数据库(mongodb和mydql)</h1><h2 id="1-0-Node-js-操作-MongoDB"><a href="#1-0-Node-js-操作-MongoDB" class="headerlink" title="1.0.Node.js 操作 MongoDB"></a>1.0.Node.js 操作 MongoDB</h2><ul>
+<li>使用官方的<code>mongodb</code> 的包来操作  <blockquote>
+<p><a href="https://github.com/mongodb/node-mongodb-native" target="_blank" rel="noopener">https://github.com/mongodb/node-mongodb-native</a> </p>
 </blockquote>
 </li>
-<li><p>为什么选择 <code>hexo+github</code><br>没其它，<strong>免费</strong> 还有方便</p>
-</li>
-<li><p>如何搭建</p>
-<blockquote>
-<p> 请参照<br><a href="https://zhuanlan.zhihu.com/blog-setup" target="_blank" rel="noopener">hexo+github博客搭建之路</a>  </p>
+<li>使用第三方包<code>mongoose</code> 来操作  <ul>
+<li><code>mogoose</code> 基于 MongoDB官方的 <code>mongodb</code> 包再一次封装  <blockquote>
+<p><a href="http://mongoosejs.com/" target="_blank" rel="noopener">http://mongoosejs.com/</a>  </p>
 </blockquote>
+<h3 id="mongoose-操作入门demo"><a href="#mongoose-操作入门demo" class="headerlink" title="mongoose 操作入门demo"></a>mongoose 操作入门demo</h3></li>
+</ul>
+<ul>
+<li>mongose<ul>
+<li>官方网站:<a href="http://mongoosejs.com/" target="_blank" rel="noopener">http://mongoosejs.com/</a>  </li>
+<li>mongose指南:<a href="http://mongoosejs.com/docs/guides.html" target="_blank" rel="noopener">http://mongoosejs.com/docs/guides.html</a>  </li>
+<li>API<a href="http://mongoosejs.com/docs/api.html" target="_blank" rel="noopener">http://mongoosejs.com/docs/api.html</a></li>
+</ul>
 </li>
 </ul>
+</li>
+</ul>
+<p>1.新建文件夹<code>mongoose-demo</code>,初始化  </p>
+<pre><code class="shell">   npm init  
+</code></pre>
+<ol start="2">
+<li>安装包  <pre><code class="shell">npm i -s mongoose  
+</code></pre>
+</li>
+<li>创建<code>demo.js</code> 复制下面代码<br><code>`</code>JavaScript<br>var mongoose = require(‘mongoose’);</li>
+</ol>
+<p>// 连接 MongoDB 数据库<br>mongoose.connect(‘mongodb://localhost/test’);</p>
+<p>mongoose.Promise = global.Promise;</p>
+<p>// 创建一个模型<br>// 就是在设计数据库<br>// MongoDB 是动态的，非常灵活，只需要在代码中设计你的数据库就可以了<br>// mongoose 这个包就可以让你的设计编写过程变的非常的简单<br>var Cat = mongoose.model(‘Cat’, { name: String });</p>
+<p>for (var i = 0; i &lt; 100; i++) {<br>  // 实例化一个 Cat<br>  var kitty = new Cat({ name: ‘喵喵’ + i });</p>
+<p>  // 持久化保存 kitty 实例<br>  kitty.save(function (err) {<br>    if (err) {<br>      console.log(err);<br>    } else {<br>      console.log(‘meow’);<br>    }<br>  });<br>}  </p>
+<pre><code>### 入门操作（二） 之增删改查
+ 新建文件`demo2.js`  
+
+ **新增数据**
+```JavaScript
+var mongoose = require(&#39;mongoose&#39;);
+
+var Schema = mongoose.Schema;
+
+// 1. 连接数据库
+// 指定连接的数据库不需要存在，当你插入第一条数据之后就会自动被创建出来
+mongoose.connect(&#39;mongodb://localhost:27017/afan&#39;,{ useNewUrlParser: true });
+// 2. 设计文档结构（表结构）
+// 字段名称就是表结构中的属性名称
+// 约束的目的是为了保证数据的完整性，不要有脏数据
+var userSchema = new Schema({
+   username:{
+       type: String,
+       required: true //必须有
+   },
+   password:{
+       type: String,  
+       required: true
+   },
+   email: String
+})
+
+// 3. 将文档结构发布为模型
+//    mongoose.model 方法就是用来将一个架构发布为 model
+//    第一个参数：传入一个大写名词单数字符串用来表示你的数据库名称
+//                 mongoose 会自动将大写名词的字符串生成 小写复数 的集合名称
+//                 例如这里的 User 最终会变为 users 集合名称
+//    第二个参数：架构 Schema
+//   
+//    返回值：模型构造函数
+
+var User = mongoose.model(&#39;User&#39;,userSchema);
+
+// 4. 当我们有了模型构造函数之后，就可以使用这个构造函数对 users 集合中的数据为所欲为了（增删改查）
+// **********************
+// #region /新增数据
+// **********************  
+var admin = new User({
+username: &#39;www&#39;,
+password: &#39;123456&#39;,
+eamil: &#39;qaqw@awn.com&#39;
+})
+
+admin.save(function(err,ret){
+    if (err) {
+        console.log(&#39;保存失败&#39;)
+    } else {
+        console.log(&#39;保存成功&#39;)
+        console.log(ret)
+    }
+})  
+</code></pre><p><strong>查询数据</strong></p>
+<pre><code class="javaScript">// **********************
+// #region /查询数据
+// **********************  
+User.find(function (err,ret){
+    if (err) {
+        console.log(err)
+    } else {
+        console.log(ret)
+    }
+})  
+
+User.find({
+ username: &#39;afan&#39;
+},function (err,ret){
+    if (err) {
+        console.log(&quot;查询失败&quot;)
+    } else {
+       return ret[0]
+    }
+})
+</code></pre>
+<p><strong>更新数据</strong></p>
+<pre><code class="javaScript">// **********************
+// #region /删除数据
+// **********************
+User.remove({
+    username: &#39;www&#39;
+  }, function (err, ret) {
+    if (err) {
+      console.log(&#39;删除失败&#39;)
+    } else {
+      console.log(&#39;删除成功&#39;)
+      console.log(ret)
+    }
+  })
+</code></pre>
+<p><strong>新增数据</strong></p>
+<pre><code class="javaScript">// **********************
+// #region /更新数据
+// **********************
+User.findByIdAndUpdate(&#39;5b62a9d97b1be525c4d63408&#39;, {
+    password: &#39;123&#39;
+  }, function (err, ret) {
+    if (err) {
+      console.log(&#39;更新失败&#39;)
+    } else {
+      console.log(&#39;更新成功&#39;)
+    }
+  })
+  //**********************
+  //#endregion /更新数据
+  //**********************
+</code></pre>
+<p><strong>更多操作请参考</strong>  </p>
+<blockquote>
+<p><a href="http://mongoosejs.com/docs/api.html#Model" target="_blank" rel="noopener">http://mongoosejs.com/docs/api.html#Model</a>  </p>
+</blockquote>
+<h2 id="Node-js操作mysql"><a href="#Node-js操作mysql" class="headerlink" title="Node.js操作mysql"></a>Node.js操作mysql</h2><p>  安装  </p>
+<pre><code>    npm install -s mysql  
+</code></pre><p>   操作参考  </p>
+<blockquote>
+<p><a href="https://www.npmjs.com/package/mysql" target="_blank" rel="noopener">https://www.npmjs.com/package/mysql</a></p>
+</blockquote>
 
         
     
@@ -526,19 +671,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/06/26/初识spring-security/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2018/07/25/使用Quartz实现定时任务调度/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
